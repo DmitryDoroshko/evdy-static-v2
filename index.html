@@ -5,9 +5,113 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Evdy Static v2</title>
+  <script src="scripts/app.js" defer></script>
 </head>
 <body>
-Hello, Evdy!
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <div class="header__logo">
+        Evdy Static
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a href="#" class="header__nav-link header__nav-link--active">Home</a>
+            <span class="header__drop-icon"></span>
+          </li>
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a href="#" class="header__nav-link">Shop</a>
+            <span class="header__drop-icon"></span>
+          </li>
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a href="#" class="header__nav-link">Product</a>
+            <span class="header__drop-icon"></span>
+          </li>
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a href="#" class="header__nav-link">Blog</a>
+            <span class="header__drop-icon"></span>
+          </li>
+          <li class="header__nav-item header__nav-item--dropdown">
+            <a href="#" class="header__nav-link">Page</a>
+            <span class="header__drop-icon"></span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__right-actions">
+        <button class="header__btn">
+          <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" fill="#F5F5F5"/>
+            <g id="Landing" clip-path="url(#clip0_5_91)">
+              <rect width="1920" height="5119" transform="translate(-1408 -40)" fill="white"/>
+              <g id="Header / Default">
+                <rect id="Rectangle 33" x="-1408" y="-40" width="1920" height="104" fill="white"/>
+                <g id="Frame 7">
+                  <g id="search">
+                    <path id="Vector"
+                          d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                          stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="Vector_2" d="M21 21L16.65 16.65" stroke="black" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_5_91">
+                <rect width="1920" height="5119" fill="white" transform="translate(-1408 -40)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button class="header__btn">
+          <svg class="header__icon" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 502.664 502.664" xml:space="preserve">
+    <path d="M132.099,230.872c55.394,0,100.088-44.759,100.088-99.937c0-55.243-44.673-99.981-100.088-99.981
+				c-55.135,0-99.808,44.738-99.808,99.981C32.291,186.091,76.965,230.872,132.099,230.872z"/>
+            <path d="M212.3,247.136H52.072C23.469,247.136,0,273.431,0,305.636v160.896
+				c0,1.769,0.841,3.387,1.014,5.177h262.387c0.108-1.79,0.949-3.408,0.949-5.177V305.636
+				C264.35,273.431,240.967,247.136,212.3,247.136z"/>
+            <path d="M502.664,137.751c-0.108-58.673-53.711-105.934-119.33-105.783
+				c-65.92,0.108-119.092,47.758-119.006,106.279c0.108,46.226,33.478,85.334,79.812,99.722l0.626,202.55l38.676,27.826
+				l40.208-28.064l-0.065-26.877h-18.572l-0.086-26.338h18.616l-0.173-29.121h-18.486l-0.086-26.295h18.572l-0.086-26.316h-18.551
+				l-0.065-26.316l18.637-0.022l-0.302-41.157C469.402,223.279,502.664,184.02,502.664,137.751z M383.399,77.612
+				c14.776,0,26.899,12.101,26.899,26.856c0.108,14.949-12.015,27.007-26.834,27.007c-14.905,0-26.942-11.886-26.942-26.877
+				C356.436,89.778,368.494,77.655,383.399,77.612z"/>
+</svg>
+        </button>
+        <button class="header__btn">
+          <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.84 4.60999C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.60999L12 5.66999L10.94 4.60999C9.9083 3.5783 8.50903 2.9987 7.05 2.9987C5.59096 2.9987 4.19169 3.5783 3.16 4.60999C2.1283 5.64169 1.54871 7.04096 1.54871 8.49999C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.4518 9.22248 22.4518 8.49999C22.4518 7.77751 22.3095 7.0621 22.0329 6.39464C21.7563 5.72718 21.351 5.12075 20.84 4.60999V4.60999Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        </button>
+        <button class="header__btn">
+          <svg class="header__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                  stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="header__hamburger-menu" id="hamburger-menu">
+        <span class="header__hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
 </body>
 </html>

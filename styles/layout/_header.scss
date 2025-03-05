@@ -1,0 +1,139 @@
+.header {
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4.35rem .5rem;
+  }
+
+  &__logo {
+    font-family: $font-main;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  &__nav {
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    height: 100%;
+
+    @media only screen and (max-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &__nav-item {
+    &:hover &__nav-link {
+      color: $color-main-red;
+    }
+
+    &--dropdown {
+      display: flex;
+      gap: 8.25px;
+      align-items: center;
+    }
+  }
+
+  &__nav-link {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $color-black;
+
+    &--active {
+      color: $color-main-red;
+    }
+  }
+
+  &__drop-icon {
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    transform: rotate(45deg) translateY(-30%);
+    border-right: 1px solid $color-black;
+    border-bottom: 1px solid $color-black;
+  }
+
+  &__nav-link--active + &__drop-icon {
+    border-right: 1px solid $color-main-red;
+    border-bottom: 1px solid $color-main-red;
+  }
+
+  &__right-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.2rem;
+
+    @media only screen and (max-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__btn:hover &__icon, &__btn:hover &__icon path {
+    fill: $color-main-red;
+    stroke: $color-main-red;
+  }
+
+  &__icon {
+  }
+
+  &__hamburger-menu {
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    width: 3.5rem;
+    cursor: pointer;
+
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    display: none;
+
+    @media only screen and (max-width: $breakpoint-large) {
+      display: block;
+      z-index: 198;
+    }
+  }
+
+  &__hamburger-menu &__hamburger-bar,
+  &__hamburger-menu::before,
+  &__hamburger-menu::after {
+    z-index: 100;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: $color-main-red;
+    margin: 6px 0;
+    transition: .4s;
+  }
+
+  &__hamburger-menu.active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  &__hamburger-menu.active &__hamburger-bar {
+    opacity: 0;
+  }
+
+  &__hamburger-menu.active::after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+}
