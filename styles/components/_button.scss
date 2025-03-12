@@ -1,0 +1,32 @@
+.btn {
+  font-family: $font-secondary;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .4s;
+
+  &--grey {
+    color: $color-white;
+    background: $color-grey;
+    padding: 1rem 4.5rem;
+    border-radius: 6px;
+    &:hover {
+      background: darken($color-grey, 10%);
+    }
+  }
+
+  &--slider {
+    border-radius: 100px;
+    color: $color-white;
+    width: 1.2rem;
+    height: 1.2rem;
+
+    &.active {
+      background: $color-main-red;
+    }
+  }
+}
+
