@@ -1,0 +1,12 @@
+
+.heading {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+
+  &--red {
+    color: $color-main-red;
+  }
+}
+
