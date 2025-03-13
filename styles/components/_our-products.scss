@@ -1,0 +1,105 @@
+.our-products {
+  margin-bottom: 10rem;
+  padding: 0 .9rem;
+
+  &__inner {
+  }
+
+  &__heading-main {
+    margin-bottom: 3rem;
+    @media only screen and (max-width: $breakpoint-medium) {
+      text-align: center;
+    }
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 3rem;
+    justify-items: start;
+    margin-bottom: 4rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      justify-items: center;
+    }
+  }
+
+  &__product {
+    padding-bottom: 2rem;
+  }
+
+  &__picture-container {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+
+  &__img {
+  }
+
+  &__content-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $color-grey;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    margin-bottom: 1rem;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-main-red;
+  }
+
+  &__btn {
+  }
+
+  &__notice {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-family: $font-secondary;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: .3rem 2.5rem;
+
+    &--bestseller {
+      color: $color-black;
+      background: $color-yellow;
+    }
+
+    &--out-of-stock {
+      color: $color-white-2;
+      background: $color-main-red;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__show-more-btn {
+  }
+}
