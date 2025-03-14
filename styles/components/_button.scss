@@ -13,6 +13,7 @@
     background: $color-grey;
     padding: 1rem 4.5rem;
     border-radius: 6px;
+
     &:hover {
       background: darken($color-grey, 10%);
     }
@@ -34,9 +35,18 @@
     padding: 1rem 4.5rem;
     background: $color-black;
     color: $color-white;
+
     &:hover {
       background: lighten($color-black, 15%);
     }
+  }
+
+  &--white {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $color-black;
   }
 }
 
