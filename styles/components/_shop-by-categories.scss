@@ -10,6 +10,10 @@
   padding: 10rem .9rem 0 .9rem;
   margin-bottom: 10rem;
 
+  @media only screen and (max-width: $breakpoint-small) {
+    max-height: max-content;
+  }
+
   &__inner {
   }
 
@@ -20,6 +24,10 @@
     text-transform: uppercase;
     color: $color-main-red;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: $breakpoint-small) {
+      text-align: center;
+    }
   }
 
   &__sub-heading {
@@ -28,10 +36,18 @@
     font-size: 1.5rem;
     color: $color-grey;
     margin-bottom: 3rem;
+    @media only screen and (max-width: $breakpoint-small) {
+      text-align: center;
+    }
   }
 
   &__cards {
     display: flex;
+
+    @media only screen and (max-width: $breakpoint-small) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__card {
