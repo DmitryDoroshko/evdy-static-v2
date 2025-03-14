@@ -10,6 +10,11 @@
           $color-white 50%
   );
 
+  @media only screen and (max-width: $breakpoint-medium) {
+    padding-bottom: 54.6rem;
+    max-height: 67rem;
+  }
+
   &__inner {
     width: 100%;
   }

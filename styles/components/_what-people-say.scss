@@ -1,0 +1,93 @@
+.what-people-say {
+  margin: -17.3rem .9rem 10rem .9rem;
+  @media only screen and (max-width: $breakpoint-medium)  {
+    margin-top: 3rem;
+  }
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    text-align: center;
+    @media only screen and (max-width: $breakpoint-medium)  {
+      color: $color-black;
+    }
+  }
+
+  &__slider {
+    background: $color-white-2;
+    display: flex;
+    gap: 3.8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3.8rem;
+    margin-bottom: 4rem;
+  }
+
+  &__arrow-container {
+  }
+
+  &__arrow-container--left {
+  }
+
+  &__arrow {
+  }
+
+  &__arrow--left {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__quote {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-black;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+
+  &__author {
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $color-main-red;
+    position: relative;
+    padding-left: 2rem;
+    text-align: center;
+  }
+
+  &__arrow-container--right {
+  }
+
+  &__arrow--right {
+  }
+
+  &__slider-controls {
+  }
+
+  &__control {
+  }
+
+  &__companies {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__company-picture-container {
+    width: 100%;
+    max-width: 17rem;
+  }
+
+  &__company-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
