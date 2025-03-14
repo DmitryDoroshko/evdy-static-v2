@@ -4,9 +4,9 @@
   max-height: 63.5rem;
   background-image: linear-gradient(
           -11deg,
-          white 0%,
-          white 50%,
-          black 50%);
+          $color-white 0%,
+          $color-white 50%,
+          $color-black 50%);
   padding: 10rem .9rem 0 .9rem;
   margin-bottom: 10rem;
 
