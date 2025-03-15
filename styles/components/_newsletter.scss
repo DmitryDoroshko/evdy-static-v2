@@ -1,0 +1,47 @@
+.newsletter {
+  background: $color-black-2;
+  padding: 6rem .9rem;
+  &__inner {
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+  }
+
+  &__texts {
+    flex: 0 1 24.9rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $color-white;
+  }
+
+  &__text-highlighted {
+    color: $color-main-red;
+  }
+
+  &__actions {
+    flex: 1;
+  }
+
+  &__form {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+  &__submit-btn {
+  }
+
+}
+
+

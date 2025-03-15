@@ -1,0 +1,29 @@
+.input {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: $color-white;
+  border-radius: .6rem;
+  border: 1px solid $color-main-red;
+  padding: 1.2rem 1rem 1.1rem 1rem;
+  background: $color-black-2;
+  outline: none;
+
+  &:focus {
+    box-shadow: rgba($color-white, 0.2) 0 .7rem 2.9rem 0;
+  }
+
+  &::placeholder {
+    color: $color-white;
+  }
+
+  &--white {
+    background: $color-white;
+    &::placeholder {
+      color: $color-grey;
+    }
+    &:focus {
+      box-shadow: rgba($color-black, 0.2) 0 .7rem 2.9rem 0;
+    }
+  }
+}

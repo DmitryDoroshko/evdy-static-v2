@@ -49,5 +49,12 @@
     color: $color-black;
     background: $color-white;
   }
+
+  &--red {
+    border-radius: .6rem;
+    padding: 1rem 4.5rem;
+    background: $color-main-red;
+    color: $color-white;
+  }
 }
 
