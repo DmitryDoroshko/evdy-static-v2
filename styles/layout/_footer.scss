@@ -1,0 +1,114 @@
+.footer {
+  background: $color-black-2;
+  color: $color-white;
+  padding: 6.6rem .9rem 0 .9rem;
+
+  &__inner {
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(7.9rem, 1fr));
+    padding-bottom: 5.7rem;
+    border-bottom: 1px solid $color-main-red;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+      grid-template-columns: repeat(2, minmax(7.9rem, 1fr));
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+      grid-template-columns: minmax(7.9rem, 1fr);
+      justify-items: start;
+      gap: 2rem;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    color: $color-white;
+    line-height: 2.4rem;
+    font-size: 2.2rem;
+    font-family: $font-main;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2.7rem;
+  }
+
+  &__text {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $color-white;
+    margin-bottom: 3.6rem;
+  }
+
+  &__socials-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__social {
+  }
+
+  &__svg {
+  }
+
+  &__red-title {
+    margin-bottom: 3.1rem;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: $color-main-red;
+  }
+
+  &__link:link, &__link:visited {
+    display: inline-block;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $color-white;
+    &:not(:last-child) {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &__item-container {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 1.9rem;
+    }
+  }
+
+  &__item-svg {
+  }
+
+  &__item-text {
+    display: inline-block;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+
+  &__copyright {
+    padding: 1.7rem 0 1.6rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copy-text {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+}
