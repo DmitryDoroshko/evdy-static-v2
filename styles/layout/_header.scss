@@ -1,5 +1,4 @@
 .header {
-
   &__inner {
     display: flex;
     flex-direction: row;
@@ -25,6 +24,22 @@
     @media only screen and (max-width: $breakpoint-large) {
       display: none;
     }
+
+    &--mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__nav-list--mobile &__nav-item {
+    border: 1px solid $color-white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    width: 200px;
+  }
+
+  &__nav-list--mobile &__nav-item &__nav-link {
+    color: $color-white;
   }
 
   &__nav-item {
@@ -37,6 +52,14 @@
       gap: 8.25px;
       align-items: center;
     }
+  }
+
+  &__nav-list--mobile &__nav-item:hover &__nav-link {
+    color: $color-main-red;
+  }
+
+  &__nav-list--mobile &__nav-item:hover {
+    border: 1px solid $color-main-red;
   }
 
   &__nav-link {
@@ -60,9 +83,14 @@
     border-bottom: 1px solid $color-black;
   }
 
+
   &__nav-link--active + &__drop-icon {
     border-right: 1px solid $color-main-red;
     border-bottom: 1px solid $color-main-red;
+  }
+
+  &__nav-list--mobile > &__nav-item--dropdown > &__drop-icon {
+    display: none;
   }
 
   &__right-actions {
@@ -136,4 +164,23 @@
     transform: rotate(45deg) translate(-9px, -8px);
   }
 
+  &__mobile-nav {
+    display: none;
+    width: 0;
+    transition: width .5s ease-in;
+
+    &.active {
+      display: grid;
+      place-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: 98;
+      background-color: $color-black-2;
+      color: $color-white;
+      padding-top: 12rem;
+    }
+  }
 }
