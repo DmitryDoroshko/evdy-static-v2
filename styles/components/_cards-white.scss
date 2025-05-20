@@ -12,6 +12,9 @@
   &__card {
     padding: 5rem 3rem;
     flex: 0 1 32.3rem;
+    @media only screen and (max-width: $breakpoint-small) {
+      padding: 3rem 2rem;
+    }
   }
 
   &__card:not(:last-child) {

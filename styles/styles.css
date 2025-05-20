@@ -184,6 +184,11 @@ a {
   padding: 5rem 3rem;
   flex: 0 1 32.3rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .cards-white__card {
+    padding: 3rem 2rem;
+  }
+}
 .cards-white__card:not(:last-child) {
   border-right: 1px solid #989898;
 }
