@@ -5,6 +5,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    @media only screen and (max-width: $breakpoint-small) {
+      flex-wrap: wrap;
+    }
   }
   &__card {
     padding: 5rem 3rem;
@@ -13,15 +16,21 @@
 
   &__card:not(:last-child) {
     border-right: 1px solid $color-grey;
+    @media only screen and (max-width: $breakpoint-small) {
+      border-right: none;
+    }
   }
 
-  &__icon {}
+  &__icon {
+    margin-bottom: 3rem;
+  }
   &__title {
     font-family: $font-secondary;
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
     color: $color-main-red;
+    margin-bottom: 2.5rem;
   }
   &__text {
     font-family: $font-secondary;

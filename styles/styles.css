@@ -175,6 +175,11 @@ a {
   justify-content: center;
   width: 100%;
 }
+@media only screen and (max-width: 37.5em) {
+  .cards-white__inner {
+    flex-wrap: wrap;
+  }
+}
 .cards-white__card {
   padding: 5rem 3rem;
   flex: 0 1 32.3rem;
@@ -182,12 +187,21 @@ a {
 .cards-white__card:not(:last-child) {
   border-right: 1px solid #989898;
 }
+@media only screen and (max-width: 37.5em) {
+  .cards-white__card:not(:last-child) {
+    border-right: none;
+  }
+}
+.cards-white__icon {
+  margin-bottom: 3rem;
+}
 .cards-white__title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 2rem;
   text-transform: uppercase;
   color: #ef3636;
+  margin-bottom: 2.5rem;
 }
 .cards-white__text {
   font-family: "Poppins", sans-serif;
