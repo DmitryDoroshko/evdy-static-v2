@@ -624,6 +624,9 @@ a {
   padding: 10rem 0.9rem 0 0.9rem;
   margin-bottom: 10rem;
 }
+.shop-by-categories--about-us {
+  background: #f6f6f6 none;
+}
 @media only screen and (max-width: 37.5em) {
   .shop-by-categories {
     max-height: max-content;
